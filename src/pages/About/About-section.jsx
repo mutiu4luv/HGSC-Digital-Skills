@@ -1,4 +1,3 @@
-// src/components/AboutUs.js
 import React from "react";
 import { Container, Typography, Grid, Paper, Avatar } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -12,30 +11,78 @@ const classes = {
   teamMember: `${PREFIX}-teamMember`,
   heading: `${PREFIX}-heading`,
   paragraph: `${PREFIX}-paragraph`,
+  lastTwo: `${PREFIX}-lastTwo`,
 };
 
 const Root = styled("div")(({ theme }) => ({
   [`&.${classes.root}`]: {
     padding: theme.spacing(3),
-    textAlign: "center", // Center the text
+    textAlign: "center",
     backgroundColor: "whitesmoke",
   },
-
   [`& .${classes.paper}`]: {
     padding: theme.spacing(2),
     margin: theme.spacing(2),
     textAlign: "center",
   },
   [`& .${classes.avatar}`]: {
-    width: theme.spacing(10),
-    height: theme.spacing(10),
+    width: theme.spacing(12),
+    height: theme.spacing(12),
+    borderRadius: "50%",
+    objectFit: "cover",
     margin: "auto",
-    marginBottom: theme.spacing(1),
+    display: "block",
   },
   [`& .${classes.teamMember}`]: {
     textAlign: "center",
   },
+  [`& .${classes.lastTwo}`]: {
+    marginTop: theme.spacing(5),
+  },
 }));
+
+const teamMembers = [
+  {
+    name: "Benedicta Chinenye Nwokedi",
+    title: "CEO",
+    img: "/ceo.jpg",
+  },
+  {
+    name: "Igwe, Victoria Chinecherem.",
+    title: "DIGITAL COMPANY MANAGER",
+    img: "/digital.jpg",
+  },
+  {
+    name: "NDIUKWU EZINNE CHIOMA",
+    title: "SENIOR ACCOUNT OFFICER",
+    img: "/account.jpg",
+  },
+  {
+    name: "Chimerenma Cynthia Egboghu",
+    title: "SOCIAL MEDIA MANAGER",
+    img: "/social.jpg",
+  },
+  {
+    name: "Okeke Obiajulu Divine",
+    title: "GRAPHIC DESIGNER",
+    img: "/graphics.jpg",
+  },
+  {
+    name: "CHIKA IBE",
+    title: "BRAND AMBASSADOR",
+    img: "/brand.jpg",
+  },
+  {
+    name: "PECULIAR OGEDE",
+    title: "COMMUNITY MANAGER",
+    img: "/ogede.jpg",
+  },
+  {
+    name: "DANIEL JOSEPH",
+    title: "ASSISTANT COMMUNITY MANAGER",
+    img: "/assistant.jpg",
+  },
+];
 
 const AboutUs = () => {
   return (
@@ -56,10 +103,8 @@ const AboutUs = () => {
           ABOUT US
         </Typography>
         <Typography variant="body1" paragraph className={classes.paragraph}>
-          We are a dedicated team of professionals committed to delivering
-          top-notch solutions for our clients. Our mission is to provide
-          exceptional service and innovative products that help our clients
-          achieve their goals.
+          HGSC² Digital Skills company is a registered company where a novice is
+          trained into an expert with affordable skills.
         </Typography>
 
         <Typography
@@ -71,145 +116,38 @@ const AboutUs = () => {
           Our Team
         </Typography>
         <Grid container spacing={3} sx={{ paddingTop: "50px" }}>
-          <Grid item xs={12} sm={6} md={4}>
-            <Paper className={classes.paper}>
-              <Avatar
-                alt="Benedicta Chinenye Nwokedi"
-                src="/ceo.jpg"
-                className={classes.avatar}
-              />
-              <Typography
-                variant="h6"
-                component="h3"
-                className={classes.teamMember}
-              >
-                Benedicta Chinenye Nwokedi
-              </Typography>
-              <Typography
-                variant="body2"
-                color="textSecondary"
-                className={classes.teamMember}
-              >
-                CEO
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Paper className={classes.paper}>
-              <Avatar
-                alt="John Doe"
-                src="/path-to-image.jpg"
-                className={classes.avatar}
-              />
-              <Typography
-                variant="h6"
-                component="h3"
-                className={classes.teamMember}
-              >
-                John Doe
-              </Typography>
-              <Typography
-                variant="body2"
-                color="textSecondary"
-                className={classes.teamMember}
-              >
-                CEO
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Paper className={classes.paper}>
-              <Avatar
-                alt="John Doe"
-                src="/path-to-image.jpg"
-                className={classes.avatar}
-              />
-              <Typography
-                variant="h6"
-                component="h3"
-                className={classes.teamMember}
-              >
-                John Doe
-              </Typography>
-              <Typography
-                variant="body2"
-                color="textSecondary"
-                className={classes.teamMember}
-              >
-                CEO
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Paper className={classes.paper}>
-              <Avatar
-                alt="John Doe"
-                src="/path-to-image.jpg"
-                className={classes.avatar}
-              />
-              <Typography
-                variant="h6"
-                component="h3"
-                className={classes.teamMember}
-              >
-                John Doe
-              </Typography>
-              <Typography
-                variant="body2"
-                color="textSecondary"
-                className={classes.teamMember}
-              >
-                CEO
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Paper className={classes.paper}>
-              <Avatar
-                alt="John Doe"
-                src="/path-to-image.jpg"
-                className={classes.avatar}
-              />
-              <Typography
-                variant="h6"
-                component="h3"
-                className={classes.teamMember}
-              >
-                John Doe
-              </Typography>
-              <Typography
-                variant="body2"
-                color="textSecondary"
-                className={classes.teamMember}
-              >
-                CEO
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <Paper className={classes.paper}>
-              <Avatar
-                alt="John Doe"
-                src="/path-to-image.jpg"
-                className={classes.avatar}
-              />
-              <Typography
-                variant="h6"
-                component="h3"
-                className={classes.teamMember}
-              >
-                John Doe
-              </Typography>
-              <Typography
-                variant="body2"
-                color="textSecondary"
-                className={classes.teamMember}
-              >
-                CEO
-              </Typography>
-            </Paper>
-          </Grid>
-          {/* Repeat Grid item for other team members */}
+          {teamMembers.map((member, index) => (
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              className={index >= teamMembers.length - 2 ? classes.lastTwo : ""}
+              key={member.name}
+            >
+              <Paper className={classes.paper}>
+                <Avatar
+                  alt={member.name}
+                  src={member.img}
+                  className={classes.avatar}
+                />
+                <Typography
+                  variant="h6"
+                  component="h3"
+                  className={classes.teamMember}
+                >
+                  {member.name}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  color="textSecondary"
+                  className={classes.teamMember}
+                >
+                  {member.title}
+                </Typography>
+              </Paper>
+            </Grid>
+          ))}
         </Grid>
       </Container>
     </Root>

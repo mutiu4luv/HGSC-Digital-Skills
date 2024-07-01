@@ -10,7 +10,7 @@ const Hero = () => {
         <Typography variant="h2" className="hero-title">
           <span className="hero-title-text">
             <Typewriter
-              words={["Learn New Skills"]}
+              words={["Welcome to HGSC² Digital skills Company”"]}
               loop={true}
               cursor
               cursorStyle="..."
