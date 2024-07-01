@@ -1,0 +1,38 @@
+.hero-container {
+  position: relative;
+  height: 100vh;
+  background-image: url("/src/components/assets/hgsc-hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero-content {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Optional: For better text readability */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hero-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-title-text {
+  color: red; /* Change the text color to red */
+}
+
+.hero-subtitle {
+  margin-bottom: 40px;
+}
+
+.hero-button {
+  background-color: #f50057; /* Customize button color */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+}

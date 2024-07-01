@@ -1,0 +1,34 @@
+import React from "react";
+import { Box, Button, Typography } from "@mui/material";
+import { Typewriter } from "react-simple-typewriter";
+import "./HeroPage.css";
+
+const Hero = () => {
+  return (
+    <Box className="hero-container">
+      <Box className="hero-content">
+        <Typography variant="h2" className="hero-title">
+          <span className="hero-title-text">
+            <Typewriter
+              words={["Learn New Skills"]}
+              loop={true}
+              cursor
+              cursorStyle="..."
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={3000}
+            />
+          </span>
+        </Typography>
+        <Typography variant="h5" className="hero-subtitle">
+          Master the skills you need to succeed
+        </Typography>
+        <Button variant="contained" className="hero-button">
+          Get Started
+        </Button>
+      </Box>
+    </Box>
+  );
+};
+
+export default Hero;
