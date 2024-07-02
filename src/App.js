@@ -3,6 +3,7 @@ import ErrorBoundary from "./components/Error/Error";
 import Navbar from "./components/Navbar/Navbar";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const theme = createTheme();
@@ -13,6 +14,7 @@ function App() {
         <div className="App-main">
           <Navbar />
           <LandingPage />
+          <Footer />
         </div>
       </ErrorBoundary>{" "}
     </ThemeProvider>

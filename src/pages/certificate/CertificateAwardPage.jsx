@@ -35,39 +35,48 @@ const certificatesAndAwards = [
 
 const CertificateAwardPage = () => {
   return (
-    <Container>
-      <Typography
-        variant="h4"
-        component="h2"
-        gutterBottom
-        style={{ color: "blue", textAlign: "center", paddingTop: "70px" }}
-      >
-        Certificates & Awards
-      </Typography>
+    <div
+      style={{
+        backgroundColor: "black",
+        marginTop: "40px",
+        // marginBottom: "auto",
+        height: "100%",
+      }}
+    >
+      <Container>
+        <Typography
+          variant="h4"
+          component="h2"
+          gutterBottom
+          style={{ color: "blue", textAlign: "center", paddingTop: "90px" }}
+        >
+          Certificates & Awards
+        </Typography>
 
-      <Grid container spacing={3}>
-        {certificatesAndAwards.map((item, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card>
-              <CardMedia
-                component="img"
-                alt={item.title}
-                height="140"
-                image={item.image}
-              />
-              <CardContent>
-                <Typography variant="h6" component="div">
-                  {item.title}
-                </Typography>
-                <Typography variant="body2" color="textSecondary">
-                  {item.description}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+        <Grid container spacing={3} style={{ paddingTop: "90px" }}>
+          {certificatesAndAwards.map((item, index) => (
+            <Grid item xs={12} sm={6} md={4} key={index}>
+              <Card>
+                <CardMedia
+                  component="img"
+                  alt={item.title}
+                  height="140"
+                  image={item.image}
+                />
+                <CardContent>
+                  <Typography variant="h6" component="div">
+                    {item.title}
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary">
+                    {item.description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </div>
   );
 };
 
