@@ -130,6 +130,7 @@ const AboutUs = () => {
                   alt={member.name}
                   src={member.img}
                   className={classes.avatar}
+                  style={{ verticalAlign: "middle" }}
                 />
                 <Typography
                   variant="h6"
