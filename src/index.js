@@ -4,18 +4,19 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { BrowserRouter } from "react-router-dom";
 
 const theme = createTheme({
   // Define your MUI theme here
 });
 
 ReactDOM.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>,
-
   <ThemeProvider theme={theme}>
-    <App />
+    <BrowserRouter>
+      {/* <React.StrictMode> */}
+      <App />
+      {/* </React.StrictMode> */}
+    </BrowserRouter>
   </ThemeProvider>,
   document.getElementById("root")
 );

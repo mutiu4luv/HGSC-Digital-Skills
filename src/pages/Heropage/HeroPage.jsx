@@ -10,7 +10,7 @@ const Hero = () => {
         <Typography variant="h2" className="hero-title">
           <span className="hero-title-text">
             <Typewriter
-              words={["Welcome to HGSC² Digital skills Company”"]}
+              words={["Welcome to HGSC² Digital Skills Company"]}
               loop={true}
               cursor
               cursorStyle="..."
@@ -23,7 +23,14 @@ const Hero = () => {
         <Typography variant="h5" className="hero-subtitle">
           Master the skills you need to succeed
         </Typography>
-        <Button variant="contained" className="hero-button">
+        <Button
+          variant="contained"
+          className="hero-button"
+          component="a"
+          href="https://wa.me/message/UBJLJZJGN4ESE1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Get Started
         </Button>
       </Box>

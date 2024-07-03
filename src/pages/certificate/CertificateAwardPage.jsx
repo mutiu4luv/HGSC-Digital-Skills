@@ -39,7 +39,7 @@ const CertificateAwardPage = () => {
       style={{
         backgroundColor: "black",
         marginTop: "40px",
-        // marginBottom: "auto",
+        paddingBottom: "60px",
         height: "100%",
       }}
     >
@@ -48,7 +48,7 @@ const CertificateAwardPage = () => {
           variant="h4"
           component="h2"
           gutterBottom
-          style={{ color: "blue", textAlign: "center", paddingTop: "90px" }}
+          style={{ color: "red", textAlign: "center", paddingTop: "90px" }}
         >
           Certificates & Awards
         </Typography>
