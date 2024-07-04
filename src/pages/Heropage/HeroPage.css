@@ -1,15 +1,15 @@
 .hero-container {
   position: relative;
   height: 100vh;
-  background-image: url("/src/components/assets/hero.png");
-  background-size: cover; /* Ensure the image covers the container */
-  background-position: center; /* Center the image */
+  background-image: url("/src/components/assets/hero1.png");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  overflow: hidden; /* Ensure content doesn't overflow */
+  overflow: hidden;
 }
 
 .hero-content {
@@ -23,20 +23,21 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5); /* Optional: For better text readability */
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 8px;
-  z-index: 2; /* Ensure it layers correctly */
+  z-index: 2;
 }
 
 .hero-title {
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-bottom: 20px;
 }
 
 .hero-title-text {
-  color: yellow; /* Change the text color to yellow */
+  color: yellow;
   font-weight: 800;
+  font-size: xx-large;
 }
 
 .hero-subtitle {
@@ -46,8 +47,9 @@
 }
 
 .hero-button {
-  background-color: #f50057; /* Customize button color */
+  background-color: #f50057;
   color: white;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
+  padding-top: 20px;
   font-size: 16px;
 }

@@ -56,6 +56,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  word-wrap: break-word; /* Ensure long words break to the next line */
 }
 
 .footer-contact li i,
@@ -80,9 +82,10 @@ a {
   text-decoration: none;
   color: #ffeb3b; /* Yellow color for links */
   margin-left: 4px;
+  word-break: break-all; /* Ensure long words break to fit within the container */
 }
 
-@media (min-width: 600px) {
+@media (min-width: 937px) {
   .footer-content {
     flex-direction: row;
     justify-content: space-between;
@@ -99,5 +102,49 @@ a {
   .footer-contact li,
   .footer-designed-by li {
     justify-content: flex-start;
+  }
+}
+
+@media (max-width: 934px) {
+  .footer-content {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-info,
+  .footer-contact,
+  .footer-designed-by {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-contact li,
+  .footer-designed-by li {
+    justify-content: center;
+  }
+
+  .footer-contact li a,
+  .footer-designed-by li a {
+    word-break: break-all; /* Break long words to prevent overflow */
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-info h3,
+  .footer-contact h3,
+  .footer-designed-by h3 {
+    font-size: 18px;
+  }
+
+  .social-icons {
+    gap: 5px;
+  }
+
+  .footer-contact li,
+  .footer-designed-by li {
+    flex-direction: column;
+    align-items: center;
+    word-break: break-all; /* Break long words to prevent overflow */
   }
 }

@@ -36,9 +36,9 @@ const certificatesAndAwards = [
     image: "ifeniwa.jpg",
   },
   {
-    title: "PRISCA CHIDERA NWAOKORO",
+    title: "ABIGAIL CHIDERAH",
     description: "Awarded for achieving top performance metrics.",
-    image: "prisca.jpg",
+    image: "abigail.png",
   },
   // Add more items as needed
 ];

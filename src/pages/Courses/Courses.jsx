@@ -20,10 +20,14 @@ const Root = styled("div")(({ theme }) => ({
     padding: theme.spacing(2),
     margin: theme.spacing(2),
     textAlign: "center",
-    height: "auto", // Change to auto to allow dynamic height
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
+    height: "100%", // Make paper fill the height of the parent grid item
+  },
+  [`& .MuiGrid-item`]: {
+    display: "flex",
+    flexDirection: "column",
   },
 }));
 
@@ -88,10 +92,15 @@ const Home = () => {
   return (
     <Root className={classes.root}>
       <Container>
-        <Typography variant="h4" component="h1" gutterBottom>
+        <Typography
+          variant="h4"
+          component="h1"
+          gutterBottom
+          style={{ paddingTop: "50px" }}
+        >
           Courses We Offer
         </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography variant="body1" paragraph style={{ paddingTop: "30px" }}>
           We offer a variety of affordable digital skills. Go from being a
           novice to an expert in one month.
         </Typography>

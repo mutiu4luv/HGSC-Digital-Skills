@@ -1,6 +1,6 @@
 // src/OurVision.js
 import React, { useState, useEffect } from "react";
-import { Container, Box, Typography, Grid, Paper } from "@mui/material";
+import { Container, Box, Typography, Grid } from "@mui/material";
 import { styled } from "@mui/system";
 
 const BackgroundContainer = styled(Container)(({ theme }) => ({
@@ -41,13 +41,27 @@ const VisionImage = styled(Box)(({ theme }) => ({
   transition: "opacity 0.5s",
 }));
 
+const imageUrls = [
+  "hgsc-hero.jpeg",
+  "hero.png", // Add your image URLs here
+  "hero.jpg",
+  "hero1.png",
+  // ...add more images if needed
+];
+
 const OurVision = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showImage, setShowImage] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setShowImage((prev) => !prev);
-    }, 5000);
+      setShowImage(false);
+
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
+        setShowImage(true);
+      }, 500); // Adjust the time to match the transition duration
+    }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -60,7 +74,7 @@ const OurVision = () => {
             <VisionImage
               component="img"
               alt="Vision Image"
-              src="hgsc-hero.jpeg"
+              src={imageUrls[currentImageIndex]}
               sx={{ opacity: showImage ? 1 : 0 }}
             />
           </Grid>
