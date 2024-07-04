@@ -1,9 +1,9 @@
 .hero-container {
   position: relative;
   height: 100vh;
-  background-image: url("/src/components/assets/hero.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("/src/components/assets/hero.png");
+  background-size: cover; /* Ensure the image covers the container */
+  background-position: center; /* Center the image */
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@
   background: rgba(0, 0, 0, 0.5); /* Optional: For better text readability */
   padding: 20px;
   border-radius: 8px;
-  z-index: 1; /* Ensure it layers correctly */
+  z-index: 2; /* Ensure it layers correctly */
 }
 
 .hero-title {
@@ -35,11 +35,14 @@
 }
 
 .hero-title-text {
-  color: red; /* Change the text color to red */
+  color: yellow; /* Change the text color to yellow */
+  font-weight: 800;
 }
 
 .hero-subtitle {
   margin-bottom: 40px;
+  padding-top: 10px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .hero-button {

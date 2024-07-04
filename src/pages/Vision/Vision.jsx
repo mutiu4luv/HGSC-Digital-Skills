@@ -69,7 +69,7 @@ const OurVision = () => {
               variant="h3"
               component="h2"
               gutterBottom
-              style={{ color: "red" }}
+              style={{ color: "yellow" }}
             >
               Our Vision
             </Typography>

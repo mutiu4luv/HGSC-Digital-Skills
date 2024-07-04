@@ -88,7 +88,7 @@ const Services = () => {
           gutterBottom
           sx={{
             textAlign: "center",
-            color: "red",
+            color: "green",
             fontWeight: "bold",
             paddingTop: "60px",
           }}
@@ -110,7 +110,11 @@ const Services = () => {
                     variant="h6"
                     component="div"
                     gutterBottom
-                    sx={{ color: "red" }}
+                    sx={{
+                      color: "green ",
+                      fontSize: "25px",
+                      fontWeight: "800",
+                    }}
                   >
                     {service.title}
                   </Typography>

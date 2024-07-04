@@ -20,7 +20,7 @@ const Root = styled("div")(({ theme }) => ({
     padding: theme.spacing(2),
     margin: theme.spacing(2),
     textAlign: "center",
-    height: "140px",
+    height: "auto", // Change to auto to allow dynamic height
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
@@ -99,7 +99,7 @@ const Home = () => {
           {courses.map((course, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Paper className={classes.paper}>
-                <Typography variant="h6" style={{ color: "red" }}>
+                <Typography variant="h6" style={{ color: "green" }}>
                   {course.title}
                 </Typography>
                 <Typography variant="body2" color="textSecondary">

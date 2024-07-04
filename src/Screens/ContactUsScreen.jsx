@@ -22,7 +22,7 @@ const Contact = () => {
           gutterBottom
           sx={{
             textAlign: "center",
-            color: "red",
+            color: "green",
             fontWeight: "bold",
           }}
         >
@@ -43,6 +43,7 @@ const Contact = () => {
               href="https://www.facebook.com/profile.php?id=61553370504723&mibextid=LQQJ4d"
               target="_blank"
               color="inherit"
+              style={{ textDecoration: "none" }}
             >
               <IconButton color="primary" aria-label="Facebook">
                 <FacebookIcon fontSize="large" />
@@ -57,6 +58,7 @@ const Contact = () => {
               href="https://www.linkedin.com/company/hgsc%C2%B2-community/"
               target="_blank"
               color="inherit"
+              style={{ textDecoration: "none" }}
             >
               <IconButton color="primary" aria-label="LinkedIn">
                 <LinkedInIcon fontSize="large" />
@@ -71,6 +73,7 @@ const Contact = () => {
               href="https://wa.me/message/UBJLJZJGN4ESE1"
               target="_blank"
               color="inherit"
+              style={{ textDecoration: "none" }}
             >
               <IconButton color="primary" aria-label="WhatsApp">
                 <WhatsAppIcon fontSize="large" />
@@ -85,12 +88,13 @@ const Contact = () => {
               href="mailto:bennypresh42@gmail.com"
               target="_blank"
               color="inherit"
+              style={{ textDecoration: "none" }}
             >
-              <IconButton color="primary" aria-label="Email">
+              <IconButton color="primary" aria-label="Gmail">
                 <EmailIcon fontSize="large" />
               </IconButton>
               <Typography variant="body1" display="inline">
-                Email
+                Gmail
               </Typography>
             </MuiLink>
           </Grid>

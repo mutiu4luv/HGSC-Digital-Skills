@@ -11,24 +11,34 @@ import {
 // Sample data for certificates and awards
 const certificatesAndAwards = [
   {
-    title: "Certificate of Excellence",
-    description: "Awarded for outstanding performance in the 2023 project.",
-    image: "certificate_excellence.jpg",
+    title: "Best Coach Award",
+    description: "Awarded for being outstanding  in the 2023 project.",
+    image: "coach.png",
   },
   {
-    title: "Best Innovator Award",
+    title: "Best Student Award",
     description: "Recognized for exceptional innovation and creativity.",
-    image: "best_innovator.jpg",
+    image: "student.jpg",
   },
   {
-    title: "Employee of the Year",
+    title: "Best Student Award",
     description: "Honored for exemplary dedication and hard work.",
-    image: "employee_of_the_year.jpg",
+    image: "copy.jpg",
   },
   {
-    title: "Top Performer Award",
+    title: "PRISCA CHIDERA NWAOKORO",
     description: "Awarded for achieving top performance metrics.",
-    image: "top_performer.jpg",
+    image: "prisca.jpg",
+  },
+  {
+    title: "AKWUNECHE  IFEYINWA",
+    description: "Awarded for achieving top performance metrics.",
+    image: "ifeniwa.jpg",
+  },
+  {
+    title: "PRISCA CHIDERA NWAOKORO",
+    description: "Awarded for achieving top performance metrics.",
+    image: "prisca.jpg",
   },
   // Add more items as needed
 ];
@@ -48,7 +58,7 @@ const CertificateAwardPage = () => {
           variant="h4"
           component="h2"
           gutterBottom
-          style={{ color: "red", textAlign: "center", paddingTop: "90px" }}
+          style={{ color: "green", textAlign: "center", paddingTop: "90px" }}
         >
           Certificates & Awards
         </Typography>
@@ -62,6 +72,7 @@ const CertificateAwardPage = () => {
                   alt={item.title}
                   height="140"
                   image={item.image}
+                  style={{ height: "320px" }}
                 />
                 <CardContent>
                   <Typography variant="h6" component="div">

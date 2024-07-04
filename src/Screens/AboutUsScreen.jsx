@@ -22,7 +22,7 @@ const AboutUsScreen = () => {
             gutterBottom
             sx={{
               textAlign: "center",
-              color: "red",
+              color: "green",
               fontWeight: "bold",
               paddingTop: "50px",
             }}
@@ -37,7 +37,7 @@ const AboutUsScreen = () => {
             variant="h5"
             component="h3"
             gutterBottom
-            sx={{ textAlign: "center", color: "red", fontWeight: "bold" }}
+            sx={{ textAlign: "center", color: "green", fontWeight: "bold" }}
           >
             Mission Statement
           </Typography>
@@ -52,7 +52,7 @@ const AboutUsScreen = () => {
             variant="h5"
             component="h3"
             gutterBottom
-            sx={{ textAlign: "center", color: "red", fontWeight: "bold" }}
+            sx={{ textAlign: "center", color: "green", fontWeight: "bold" }}
           >
             Vision Statement
           </Typography>
@@ -68,7 +68,7 @@ const AboutUsScreen = () => {
             variant="h5"
             component="h3"
             gutterBottom
-            sx={{ textAlign: "center", color: "red", fontWeight: "bold" }}
+            sx={{ textAlign: "center", color: "green", fontWeight: "bold" }}
           >
             HGSC² is an acronym for:
           </Typography>

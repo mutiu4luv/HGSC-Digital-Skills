@@ -65,7 +65,7 @@ const teamMembers = [
   {
     name: "Okeke Obiajulu Divine",
     title: "GRAPHIC DESIGNER",
-    img: "/graphics.jpg",
+    img: "/graphics.png",
   },
   {
     name: "CHIKA IBE",
@@ -96,7 +96,7 @@ const AboutUs = () => {
           sx={{
             fontSize: "2rem",
             fontWeight: "bold",
-            color: "red",
+            color: "green",
             paddingTop: "60px",
           }}
         >

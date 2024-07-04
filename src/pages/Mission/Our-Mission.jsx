@@ -24,7 +24,11 @@ const OurMission = () => {
               variant="h4"
               component="h2"
               gutterBottom
-              style={{ color: "red", paddingTop: "70px", textAlign: "center" }}
+              style={{
+                color: "green",
+                paddingTop: "70px",
+                textAlign: "center",
+              }}
             >
               Our Mission
             </Typography>
