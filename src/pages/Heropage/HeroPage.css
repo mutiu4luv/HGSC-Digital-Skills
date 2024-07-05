@@ -1,41 +1,39 @@
+/* HeroPage.css */
+
 .hero-container {
   position: relative;
   height: 100vh;
-  background-image: url("/src/components/assets/hero1.png");
+  background-image: url("/src/components/assets/hero1 (1).png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  overflow: hidden;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  padding-top: 150px;
+  border-top: 5px;
 }
 
 .hero-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: relative; /* Changed from absolute to relative */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* Apply the overlay background here */
   padding: 20px;
   border-radius: 8px;
-  z-index: 2;
+  z-index: 2; /* Ensure it layers correctly */
 }
 
 .hero-title {
-  /* font-weight: bold; */
   margin-bottom: 20px;
 }
 
 .hero-title-text {
-  color: yellow;
+  color: wheat;
   font-weight: 800;
   font-size: xx-large;
 }
@@ -44,12 +42,11 @@
   margin-bottom: 40px;
   padding-top: 10px;
   font-family: "Courier New", Courier, monospace;
+  color: yellow;
 }
 
 .hero-button {
-  background-color: #f50057;
   color: white;
-  /* padding: 10px 20px; */
-  padding-top: 20px;
+  padding: 10px 20px;
   font-size: 16px;
 }

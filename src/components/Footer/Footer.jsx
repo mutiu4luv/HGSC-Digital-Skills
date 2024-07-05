@@ -95,8 +95,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <i className="fa-solid fa-map-marker-alt"></i> Address:
-                Thirkleby Close, Slough, Berkshire. United Kingdom
+                <i className="fa-solid fa-map-marker-alt"></i> Address: Coker,
+                Surulere, Lagos state. Nigeria
               </li>
             </ul>
           </div>

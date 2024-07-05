@@ -30,7 +30,7 @@ const Hero = () => {
           href="https://wa.me/message/UBJLJZJGN4ESE1"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ marginTop: "25px" }}
+          style={{ marginTop: "25px", backgroundColor: "green" }}
         >
           Get Started
         </Button>
