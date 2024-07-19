@@ -1,4 +1,3 @@
-import React from "react";
 import HeroPage from "../Heropage/HeroPage.jsx";
 import About from "../About/About-section";
 import Courses from "../Courses/Courses.jsx";
@@ -7,8 +6,13 @@ import OurVision from "../Vision/Vision.jsx";
 import Review from "../Review/Review.jsx";
 import CertificateAwardPage from "../certificate/CertificateAwardPage.jsx";
 import { Box } from "@mui/material";
+import Alumini from "../Alumni/Alumini.jsx";
+import Bonuses from "../../components/Bonuses/Bonus.jsx";
+import useScrollToTop from "../../components/ScrollToTop/ScrollToTop.jsx";
 
 const LandingPage = () => {
+  useScrollToTop();
+
   return (
     <div>
       {/* <HeroPage />
@@ -28,7 +32,9 @@ const LandingPage = () => {
           <Courses />
           <OurMission />
           <OurVision />
+          <Alumini />
           <Review />
+          <Bonuses />
           <CertificateAwardPage />
         </Box>
         {/* <Footer /> */}

@@ -12,7 +12,8 @@ import {
 const certificatesAndAwards = [
   {
     title: "Best Coach Award",
-    description: "Awarded for being outstanding  in the 2023 project.",
+    description:
+      "Awarded for helping the company achieve its goals in the 4th Batch.",
     image: "coach.png",
   },
   {
@@ -26,18 +27,19 @@ const certificatesAndAwards = [
     image: "copy.jpg",
   },
   {
-    title: "PRISCA CHIDERA NWAOKORO",
-    description: "Awarded for achieving top performance metrics.",
+    title: "PROFESSIONAL COACHING TRAINING",
+    description: "We train aspiring coaches to become professional coaches.",
     image: "prisca.jpg",
   },
   {
-    title: "AKWUNECHE  IFEYINWA",
-    description: "Awarded for achieving top performance metrics.",
+    title: "OFFICIAL CERTIFICATE FOR ALL SKILLS",
+    description:
+      "Our students go through rigorous trainings before receiving this testament.",
     image: "ifeniwa.jpg",
   },
   {
-    title: "ABIGAIL CHIDERAH",
-    description: "Awarded for achieving top performance metrics.",
+    title: "INDUSTRIAL TRAINING CERTIFICATE",
+    description: "We offer I.T programs in the company.",
     image: "abigail.png",
   },
   // Add more items as needed
@@ -47,7 +49,7 @@ const CertificateAwardPage = () => {
   return (
     <div
       style={{
-        backgroundColor: "black",
+        // backgroundColor: "black",
         marginTop: "40px",
         paddingBottom: "60px",
         height: "100%",
@@ -75,10 +77,18 @@ const CertificateAwardPage = () => {
                   style={{ height: "320px" }}
                 />
                 <CardContent>
-                  <Typography variant="h6" component="div">
+                  <Typography
+                    variant="h6"
+                    component="div"
+                    style={{ textAlign: "center" }}
+                  >
                     {item.title}
                   </Typography>
-                  <Typography variant="body2" color="textSecondary">
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    style={{ textAlign: "center" }}
+                  >
                     {item.description}
                   </Typography>
                 </CardContent>

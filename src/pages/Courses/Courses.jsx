@@ -86,6 +86,11 @@ const courses = [
     description:
       "Do you want to learn how to teach and impact others? Register for this masterclass to become a certified professional coach.",
   },
+  {
+    title: "Facebook Visibility",
+    description:
+      "Facebook visibility course teaches you on how to setup your profile, make your posts visible and how to navigate the app.",
+  },
 ];
 
 const Home = () => {
@@ -104,7 +109,7 @@ const Home = () => {
           We offer a variety of affordable digital skills. Go from being a
           novice to an expert in one month.
         </Typography>
-        <Grid container spacing={3}>
+        <Grid container spacing={3} style={{ paddingTop: "50px" }}>
           {courses.map((course, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <Paper className={classes.paper}>

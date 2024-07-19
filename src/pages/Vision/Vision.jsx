@@ -83,11 +83,16 @@ const OurVision = () => {
               variant="h3"
               component="h2"
               gutterBottom
-              style={{ color: "yellow" }}
+              style={{ color: "green" }}
             >
               Our Vision
             </Typography>
-            <Typography variant="body1" component="p" gutterBottom>
+            <Typography
+              variant="body1"
+              component="p"
+              gutterBottom
+              style={{ textAlign: "left" }}
+            >
               At HGSC² Digital Skills, Our vision is to be the leading company
               of accessible digital skills training globally, creating a world
               where financial barriers no longer prevent individuals from
@@ -105,7 +110,11 @@ const OurVision = () => {
               the best. We aim to create a future where [briefly describe your
               envisioned future].
             </Typography>
-            <Typography variant="body1" component="p">
+            <Typography
+              variant="body1"
+              component="p"
+              style={{ textAlign: "left" }}
+            >
               We believe that through innovation and dedication, we can
               transform lives and communities, empowering people to realize
               their dreams and contribute meaningfully to the digital economy.

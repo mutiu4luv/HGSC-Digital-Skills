@@ -9,10 +9,22 @@ import {
 } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { styled } from "@mui/system";
+import { red } from "@mui/material/colors";
+import GmailIcon from "../components/Gmail/GmailIcon"; // Adjust the path as needed
+import useScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 const Contact = () => {
+  const GreenIconButton = styled(IconButton)({
+    color: "#25D366", // WhatsApp green color
+  });
+
+  const RedIconButton = styled(IconButton)({
+    color: red[500], // Gmail red color
+  });
+  useScrollToTop();
+
   return (
     <Container style={{ paddingTop: "60px" }}>
       <Box my={4}>
@@ -75,9 +87,9 @@ const Contact = () => {
               color="inherit"
               style={{ textDecoration: "none" }}
             >
-              <IconButton color="primary" aria-label="WhatsApp">
+              <GreenIconButton aria-label="WhatsApp">
                 <WhatsAppIcon fontSize="large" />
-              </IconButton>
+              </GreenIconButton>
               <Typography variant="body1" display="inline">
                 WhatsApp
               </Typography>
@@ -90,9 +102,9 @@ const Contact = () => {
               color="inherit"
               style={{ textDecoration: "none" }}
             >
-              <IconButton color="primary" aria-label="Gmail">
-                <EmailIcon fontSize="large" />
-              </IconButton>
+              <RedIconButton aria-label="Gmail">
+                <GmailIcon fontSize="large" />
+              </RedIconButton>
               <Typography variant="body1" display="inline">
                 Gmail
               </Typography>

@@ -48,9 +48,15 @@ const teamMembers = [
     img: "/ceo.jpg",
   },
   {
-    name: "Igwe, Victoria Chinecherem.",
+    name: "Igwe Victoria Chinecherem",
     title: "DIGITAL COMPANY MANAGER",
     img: "/digital.jpg",
+  },
+
+  {
+    name: "Chimerenma Cynthia Egboghu",
+    title: "SOCIAL MEDIA MANAGER",
+    img: "/chinemem.jpg",
   },
   {
     name: "NDIUKWU EZINNE CHIOMA",
@@ -58,17 +64,12 @@ const teamMembers = [
     img: "/account.jpg",
   },
   {
-    name: "Chimerenma Cynthia Egboghu",
-    title: "SOCIAL MEDIA MANAGER",
-    img: "/social.jpg",
-  },
-  {
     name: "Okeke Obiajulu Divine",
     title: "GRAPHIC DESIGNER",
     img: "/graphics.png",
   },
   {
-    name: "CHIKA IBE",
+    name: "CHIKA IBEh",
     title: "BRAND AMBASSADOR",
     img: "/brand.jpg",
   },
@@ -115,7 +116,11 @@ const AboutUs = () => {
         >
           Our Team
         </Typography>
-        <Grid container spacing={3} sx={{ paddingTop: "50px" }}>
+        <Grid
+          container
+          spacing={3}
+          sx={{ paddingTop: "50px", textTransform: "uppercase" }}
+        >
           {teamMembers.map((member, index) => (
             <Grid
               item

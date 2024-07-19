@@ -50,7 +50,9 @@ const Footer = () => {
                 {/* <img src={logo} alt="Logo" className="navbar-logo-image" /> */}
               </a>
             </div>
-            <p>Follow us on our social media platforms below.</p>
+            <p style={{ paddingLeft: "5px" }}>
+              Follow us on our social media platforms below.
+            </p>
             <ul className="social-icons">
               <li>
                 <a
@@ -72,7 +74,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/message/UBJLJZJGN4ESE1"
+                  href="https://chat.whatsapp.com/HEv554Gbdtb27FBVgsYghq"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -83,15 +85,15 @@ const Footer = () => {
           </div>
           <div className="footer-contact">
             <h3>Contact Information:</h3>
-            <ul>
+            <ul style={{ marginTop: "-15px" }}>
               <li>
                 <i className="fa-solid fa-phone"></i> Phone:
                 <a href="tel:+2349071651329">+2349071651329</a>
               </li>
               <li>
                 <i className="fa-solid fa-envelope"></i> Email:
-                <a href="mailto:bennypresh42@gmail.com">
-                  bennypresh42@gmail.com
+                <a href="mailto:hgscdigitalskillsacademy@gmail.com">
+                  hgscdigitalskillsacademy@gmail.com
                 </a>
               </li>
               <li>
@@ -102,7 +104,7 @@ const Footer = () => {
           </div>
           <div className="footer-designed-by">
             <h3> Designed by:</h3>
-            <ul>
+            <ul style={{ marginTop: "-15px" }}>
               <li>
                 <i className="fa-solid fa-phone"></i> Phone:
                 <a href="tel:+2347031911306">+2347031911306</a>
