@@ -82,7 +82,7 @@ const Contact = () => {
           </Grid>
           <Grid item>
             <MuiLink
-              href="https://wa.me/message/UBJLJZJGN4ESE1"
+              href="https://chat.whatsapp.com/KbQg7EWQzsYEFL5aiFhpyd"
               target="_blank"
               color="inherit"
               style={{ textDecoration: "none" }}

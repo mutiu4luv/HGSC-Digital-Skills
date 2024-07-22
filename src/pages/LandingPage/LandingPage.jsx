@@ -9,11 +9,14 @@ import { Box } from "@mui/material";
 import Alumini from "../Alumni/Alumini.jsx";
 import Bonuses from "../../components/Bonuses/Bonus.jsx";
 import useScrollToTop from "../../components/ScrollToTop/ScrollToTop.jsx";
+// import { Helmet } from "react-helmet";
 
 const LandingPage = () => {
   useScrollToTop();
 
   return (
+    // <Helmet>
+
     <div>
       {/* <HeroPage />
       <About />
@@ -22,6 +25,13 @@ const LandingPage = () => {
       <OurVision />
       <Review /> */}
       {/* <CertificateAwardPage /> */}
+      {/* <title>Home Page - Your Website</title>
+      <meta
+        name="hgsccdigitalskills teachs us how to learn new skills such us content writing, Health Writing
+,Ghostwriting,Social Media Management,Copywriting,Public Speaking,Graphic Designing,Fashion Designing, Video Editing,Facebook Visibility,Professional Coaching,LinkedIn Full Course"
+        content="Welcome to the home page https://hgsccdigitalskills.com.ng ."
+      />
+      <link rel="canonical" href="https://hgsccdigitalskills.com.ng" /> */}
 
       <Box
         sx={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
@@ -40,6 +50,7 @@ const LandingPage = () => {
         {/* <Footer /> */}
       </Box>
     </div>
+    // </Helmet>
   );
 };
 
