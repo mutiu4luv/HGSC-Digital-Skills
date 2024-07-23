@@ -36,7 +36,7 @@ const AboutUsScreen = () => {
             is trained into an expert with affordable skills.
           </Typography>
 
-          <Typography
+          {/* <Typography
             variant="h5"
             component="h3"
             gutterBottom
@@ -123,7 +123,7 @@ const AboutUsScreen = () => {
             certified them for paid classes. And over 2000 individuals in
             different trainings organized by the company. You can never regret
             training with us, we are famous in training the best.
-          </Typography>
+          </Typography> */}
           <Typography
             variant="h5"
             component="h3"

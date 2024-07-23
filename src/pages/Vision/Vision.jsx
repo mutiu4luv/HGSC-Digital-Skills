@@ -1,6 +1,6 @@
 // src/OurVision.js
 import React, { useState, useEffect } from "react";
-import { Container, Box, Typography, Grid } from "@mui/material";
+import { Container, Box, Typography, Grid, Button } from "@mui/material";
 import { styled } from "@mui/system";
 
 const BackgroundContainer = styled(Container)(({ theme }) => ({
@@ -106,9 +106,9 @@ const OurVision = () => {
               <br /> And over 2000 individuals in different trainings organized
               by the company.
               <br />
-              You can never regret training with us, we are famous in training
+              {/* You can never regret training with us, we are famous in training
               the best. We aim to create a future where [briefly describe your
-              envisioned future].
+              envisioned future]. */}
             </Typography>
             <Typography
               variant="body1"
@@ -121,6 +121,17 @@ const OurVision = () => {
             </Typography>
           </Grid>
         </Grid>
+        <Button
+          variant="contained"
+          className="hero-button"
+          component="a"
+          href="https://wa.me/message/UBJLJZJGN4ESE1"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ marginTop: "25px", backgroundColor: "green" }}
+        >
+          GET STARTED{" "}
+        </Button>
       </Content>
     </BackgroundContainer>
   );

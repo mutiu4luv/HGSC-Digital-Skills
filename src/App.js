@@ -8,6 +8,7 @@ import AboutUsScreen from "./Screens/AboutUsScreen";
 import { Route, Routes } from "react-router-dom";
 import Contact from "./Screens/ContactUsScreen";
 import Services from "./Screens/Services";
+import FixedWhatsAppIcon from "./components/Whatsapp/WhatsappIcon";
 // import { Helmet } from "react-helmet";
 
 function App() {
@@ -15,11 +16,11 @@ function App() {
   return (
     // <Helmet>
     <ThemeProvider theme={theme}>
-      <title>HGSC² Digital Skills</title>
+      {/* <title>HGSC² Digital Skills</title>
       <meta
         name="description"
         content="HGSC² Digital Skills is a product that will help you develop your skill"
-      />
+      /> */}
       <link rel="canonical" href="https://hgsccdigitalskills.com.ng/" />
       <CssBaseline />
       <ErrorBoundary>
@@ -29,7 +30,7 @@ function App() {
           <Footer />
         </div> */}
         <Navbar />
-
+        <FixedWhatsAppIcon />
         <Routes>
           <Route path="/" element={<LandingPage />}></Route>
           <Route path="/about" element={<AboutUsScreen />}></Route>

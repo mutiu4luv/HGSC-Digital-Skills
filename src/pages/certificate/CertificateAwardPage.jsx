@@ -6,6 +6,7 @@ import {
   Card,
   CardContent,
   CardMedia,
+  Button,
 } from "@mui/material";
 
 // Sample data for certificates and awards
@@ -96,6 +97,27 @@ const CertificateAwardPage = () => {
             </Grid>
           ))}
         </Grid>
+
+        <Button
+          variant="contained"
+          className="hero-button"
+          component="a"
+          href="https://wa.me/message/UBJLJZJGN4ESE1"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            marginTop: "25px",
+            backgroundColor: "green",
+            justifyContent: "center",
+            textAlign: "center",
+            display: "flex",
+            width: "150px",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        >
+          GET STARTED{" "}
+        </Button>
       </Container>
     </div>
   );

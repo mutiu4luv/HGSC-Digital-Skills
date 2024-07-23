@@ -97,7 +97,7 @@ const services = [
     title: "LinkedIn Full Course",
     description:
       "Comprehensive LinkedIn courses to help you build and grow your professional network.",
-    image: "linkedin.jpg",
+    image: "linkedIn.png",
   },
   {
     title: "Professional Coaching",
@@ -109,7 +109,7 @@ const services = [
     title: "Facebook Visibility",
     description:
       "Facebook visibility course teaches you on how to setup your profile, make your posts visible and how to navigate the app.",
-    image: "public.jpg",
+    image: "facebook.png",
   },
 ];
 
