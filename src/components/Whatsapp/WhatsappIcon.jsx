@@ -32,7 +32,7 @@ const FixedWhatsAppIcon = () => {
         rel="noopener noreferrer"
         style={{ marginTop: "25px", backgroundColor: "green" }}
       >
-        GET STARTED{" "}
+        REGISTER HERE
       </Button>
     </div>
   );

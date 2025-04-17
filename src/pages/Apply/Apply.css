@@ -1,0 +1,58 @@
+.apply-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.timer {
+  font-weight: bold;
+  font-size: 18px;
+  color: red;
+}
+
+.join-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.join-button:hover {
+  background-color: #e64a19;
+}
+
+@media (max-width: 768px) {
+  .apply-container {
+    padding: 15px;
+  }
+
+  p,
+  h3 {
+    font-size: 14px;
+  }
+
+  .join-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}

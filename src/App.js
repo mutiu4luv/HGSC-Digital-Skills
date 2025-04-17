@@ -9,6 +9,7 @@ import { Route, Routes } from "react-router-dom";
 import Contact from "./Screens/ContactUsScreen";
 import Services from "./Screens/Services";
 import FixedWhatsAppIcon from "./components/Whatsapp/WhatsappIcon";
+import Apply from "./pages/Apply/Apply";
 // import { Helmet } from "react-helmet";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/about" element={<AboutUsScreen />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/services" element={<Services />}></Route>
+          <Route path="/apply" element={<Apply />}></Route>
         </Routes>
         <Footer />
       </ErrorBoundary>{" "}
