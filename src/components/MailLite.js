@@ -34,20 +34,34 @@
 // };
 
 // export default MailerLiteForm;
+// src/components/MailerLiteForm.js
+import React, { useEffect } from "react";
 
-import React from "react";
+const MailLite = () => {
+  useEffect(() => {
+    // Prevent script from loading multiple times
+    if (
+      !document.querySelector(
+        'script[src="https://assets.mailerlite.com/js/universal.js"]'
+      )
+    ) {
+      const script = document.createElement("script");
+      script.src = "https://assets.mailerlite.com/js/universal.js";
+      script.async = true;
+      script.onload = () => {
+        if (window.ml) {
+          window.ml("account", "1456775"); // Your MailerLite account ID
+        }
+      };
+      document.body.appendChild(script);
+    } else {
+      if (window.ml) {
+        window.ml("account", "1456775");
+      }
+    }
+  }, []);
 
-const MailerLiteForm = () => {
-  return (
-    <iframe
-      src="https://assets.mailerlite.com/webforms/submit/1456775"
-      width="100%"
-      height="500"
-      frameBorder="0"
-      scrolling="no"
-      style={{ border: "none", margin: 0, padding: 0 }}
-    ></iframe>
-  );
+  return <div className="ml-embedded" data-form="Ds4RaE"></div>; // Your MailerLite form ID
 };
 
-export default MailerLiteForm;
+export default MailLite;
